@@ -1,0 +1,71 @@
+// Show/Hide
+.show {
+    display: inline-block;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  // Layout
+  #wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px 10px 20px;
+  }
+  
+  // List Form and List
+  #todo-item {
+    padding: 5px;
+    width: 240px;
+    border: 1px solid gray;
+  }
+  
+  #add {
+    padding: 3px 5px;
+    margin-bottom: 10px;
+    width: 75px;
+  }
+  
+  #list {
+    li {
+      padding-bottom: 2px;
+  
+      span.completed {
+        text-decoration: line-through;
+      }
+  
+    }
+  
+    .list-check-off {
+      -ms-transform: scale(1.5); /* IE */
+      -moz-transform: scale(1.5); /* FF */
+      -webkit-transform: scale(1.5); /* Safari and Chrome */
+      -o-transform: scale(1.5); /* Opera */
+      transform: scale(1.5);
+      margin-right: 2px;
+    }
+  
+    .read-item-title {
+      padding: 0 6px;
+    }
+  
+    .edit-item-title {
+      padding: 0 5px;
+      border: 1px solid gray;
+    }
+  
+    .edit-item {
+      margin-left: 5px;
+    }
+  }
+  
+  // Item Counter and Delete Button
+  #item-counter-and-delete-button {
+    padding: 25px 0 0;
+  }
+  
+  #delete-completed-items {
+    padding: 3px 5px;
+    width: 200px;
+  }

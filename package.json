@@ -1,0 +1,22 @@
+{
+  "name": "vanilla-javascript-to-do-list",
+  "version": "1.0.0",
+  "description": "- Created using an ES6 class and Gulp for transpiling to ES5.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hollyw00d/vanilla-javascript-to-do-list.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hollyw00d/vanilla-javascript-to-do-list/issues"
+  },
+  "homepage": "https://github.com/Hollyw00d/vanilla-javascript-to-do-list#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  }
+}
