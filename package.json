@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Hollyw00d/vanilla-javascript-to-do-list#readme",
   "devDependencies": {
-    "gulp": "^4.0.0"
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2"
   }
 }
