@@ -1,2 +1,2 @@
-# vanilla-javascript-to-do-list
-Vanilla JavaScript To Do List
+# Vanilla JavaScript To Do List
+- Created using an ES6 class and Gulp for transpiling to ES5.
