@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Simple To Do List Using Vanilla JavaScript</title>
+  </head>
+  <body>
+
+<div id="wrapper">
+  <h1>Simple To Do List Using Vanilla JavaScript</h1>
+  
+  <form><p><label for="todoItem">To Do Item</label><br><input id="todo-item" name="taskName" type="text" required minlength="2" maxlength="30"></p>
+    
+    <p><input type="submit" value="Add"></p>
+    
+  </form>
+
+<ul id="list"></ul>
+  
+    <p id="total-item-count">You have <span id="total-completed-items1"></span> of <span id="total-items"></span> items completed on your to do list.</p>
+
+    <p id="delete-btn" class="hide"><button>Delete completed (<span id="total-completed-items2"></span>) tasks</button></p>
+
+</div>
+
+    <script src="js/build/scripts-min.js"></script>
+</body>
+</html>
