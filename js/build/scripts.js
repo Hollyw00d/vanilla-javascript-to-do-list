@@ -37,14 +37,15 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         }
 
         return "<li><input data-id=\"".concat(item.id, "\" type=\"checkbox\" value=\"").concat(item.completed, "\" class=\"to-do-list-checkbox\" ").concat(checkedOrNot, " /><span class=\"").concat(completedOrNot, "read-item-title\">").concat(item.task, "</span><input class=\"edit-item hide\" type=\"text\" value=\"").concat(item.task, "\" /></li>");
-      }).join('');
-      var editInstructions = '<p id="instructions"><strong>Click on an item to edit it.</strong></p>'; // If array contains elements and
-      // document.body does NOT contain #instructions
-      // insert instructions
+      }).join(''); // If array contains elements
+      // show instructions
 
-      if (_this.toDoListItems.length > 0 && !document.body.contains(document.getElementById('instructions'))) {
-        _this.list.insertAdjacentHTML('afterend', editInstructions);
-      } // Add total items inside #total-items element
+      if (_this.toDoListItems.length > 0) {
+        _this.instructions.className = 'show';
+      } // Else hide instructions
+      else {
+          _this.instructions.className = 'hide';
+        } // Add total items inside #total-items element
 
 
       _this.totalItems.innerHTML = _this.toDoListItems.length;
@@ -166,7 +167,16 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       _this.totalCompletedItems1.innerHTML = _this.toDoListItems.filter(function (item) {
         return item.completed === true;
       }).length;
-      _this.totalItems.innerHTML = _this.toDoListItems.length;
+      _this.totalItems.innerHTML = _this.toDoListItems.length; // If array contains elements
+      // show instructions
+
+      if (_this.toDoListItems.length > 0) {
+        _this.instructions.className = 'show';
+      } // Else hide instructions
+      else {
+          console.log('blah');
+          _this.instructions.className = 'hide';
+        }
     });
 
     _defineProperty(this, "showUpdateItems", function (e) {
@@ -254,9 +264,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
     this.totalItems = document.querySelector('#total-items'); // To do items listed out inside a UL tag
 
-    this.list = document.querySelector('#list'); // To do item check box
+    this.list = document.querySelector('#list'); // Edit items instructions
 
-    this.toDoItemCheckbox = document.querySelector('.to-do-list-checkbox'); // Delete button paragraph
+    this.instructions = document.querySelector('#instructions'); // Delete button paragraph
 
     this.deleteBtnParagraph = document.querySelector('#delete-btn'); // Delete button
 
