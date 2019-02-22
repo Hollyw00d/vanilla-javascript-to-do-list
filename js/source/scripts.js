@@ -212,7 +212,6 @@
      }
      // Else hide instructions
      else {
-       console.log('blah')
        this.instructions.className = 'hide'
      }
      
