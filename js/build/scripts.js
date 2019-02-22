@@ -174,7 +174,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         _this.instructions.className = 'show';
       } // Else hide instructions
       else {
-          console.log('blah');
           _this.instructions.className = 'hide';
         }
     });
