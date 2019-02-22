@@ -248,8 +248,8 @@
        
         // Get data-id attribute
         const dataId = Number(editItem.previousSibling.previousSibling.dataset.id)
-        // Get index number of item.id
-        let index = this.toDoListItems.findIndex(item => item.id === dataId)
+        // Get index number
+        let index = dataId - 1
         // Update task with edit item value
         this.toDoListItems[index].task = editItem.value
        
@@ -283,7 +283,7 @@
           // Get data-id attribute
           const dataId = Number(editItem.previousSibling.previousSibling.dataset.id)
           // Get index number of item.id
-          let index = this.toDoListItems.findIndex(item => item.id === dataId)
+          let index = dataId - 1
           // Update task with edit item value
           this.toDoListItems[index].task = editItem.value
 

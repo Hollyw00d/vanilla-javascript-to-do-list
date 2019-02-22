@@ -200,12 +200,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
         editItem.setAttribute('value', editItem.value); // Get data-id attribute
 
-        var dataId = Number(editItem.previousSibling.previousSibling.dataset.id); // Get index number of item.id
+        var dataId = Number(editItem.previousSibling.previousSibling.dataset.id); // Get index number
 
-        var index = _this.toDoListItems.findIndex(function (item) {
-          return item.id === dataId;
-        }); // Update task with edit item value
-
+        var index = dataId - 1; // Update task with edit item value
 
         _this.toDoListItems[index].task = editItem.value; // If previous sibling has 'read-item-title hide' class
 
@@ -233,10 +230,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
           var dataId = Number(editItem.previousSibling.previousSibling.dataset.id); // Get index number of item.id
 
-          var index = _this.toDoListItems.findIndex(function (item) {
-            return item.id === dataId;
-          }); // Update task with edit item value
-
+          var index = dataId - 1; // Update task with edit item value
 
           _this.toDoListItems[index].task = editItem.value; // If previous sibling has 'read-item-title hide' class
 
