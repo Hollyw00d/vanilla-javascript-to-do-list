@@ -69,9 +69,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       var dataId = Number(e.target.dataset.id); // Get array element selected by
       // clicking on a checkbox
 
-      var getChosenItem = getToDoListElements.toDoListItems.find(function (item) {
+      var getChosenItem = getToDoListElements.toDoListItems.filter(function (item) {
         return item.id === dataId;
-      }); // If event.target.className === 'to-do-list-checkbox'
+      })[0]; // If event.target.className === 'to-do-list-checkbox'
 
       if (checkbox.className === 'to-do-list-checkbox') {
         // If checkbox is checked

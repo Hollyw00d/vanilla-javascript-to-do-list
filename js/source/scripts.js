@@ -96,7 +96,7 @@
     
       // Get array element selected by
       // clicking on a checkbox
-      const getChosenItem = getToDoListElements.toDoListItems.find(item => item.id === dataId)
+      const getChosenItem = getToDoListElements.toDoListItems.filter(item => item.id === dataId)[0]
       
     // If event.target.className === 'to-do-list-checkbox'
     if(checkbox.className === 'to-do-list-checkbox') {
