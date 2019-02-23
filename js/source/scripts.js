@@ -54,7 +54,7 @@
          checkedOrNot = ''
        }
        
-       return `<li><input data-id="${item.id}" type="checkbox" value="${item.completed}" class="to-do-list-checkbox" ${checkedOrNot} /><span class="${completedOrNot}read-item-title">${item.task}</span><input class="edit-item hide" type="text" value="${item.task}" /></li>`
+       return `<li><input data-id="${item.id}" type="checkbox" value="${item.completed}" class="to-do-list-checkbox" ${checkedOrNot} /><span onclick='' class="${completedOrNot}read-item-title">${item.task}</span><input class="edit-item hide" type="text" value="${item.task}" /></li>`
      }).join('')
    
      
@@ -195,7 +195,7 @@
          checkedOrNot = ''
        }
        
-       return `<li><input data-id="${item.id}" type="checkbox" value="${item.completed}" class="to-do-list-checkbox" ${checkedOrNot} /><span class="${completedOrNot}read-item-title">${item.task}</span><input class="edit-item hide" type="text" value="${item.task}" /></li>`
+       return `<li><input data-id="${item.id}" type="checkbox" value="${item.completed}" class="to-do-list-checkbox" ${checkedOrNot} /><span onclick='' class="${completedOrNot}read-item-title">${item.task}</span><input class="edit-item hide" type="text" value="${item.task}" /></li>`
      }).join('')
      
      this.deleteBtnParagraph.classList.remove('show')

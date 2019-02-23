@@ -36,7 +36,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           checkedOrNot = '';
         }
 
-        return "<li><input data-id=\"".concat(item.id, "\" type=\"checkbox\" value=\"").concat(item.completed, "\" class=\"to-do-list-checkbox\" ").concat(checkedOrNot, " /><span class=\"").concat(completedOrNot, "read-item-title\">").concat(item.task, "</span><input class=\"edit-item hide\" type=\"text\" value=\"").concat(item.task, "\" /></li>");
+        return "<li><input data-id=\"".concat(item.id, "\" type=\"checkbox\" value=\"").concat(item.completed, "\" class=\"to-do-list-checkbox\" ").concat(checkedOrNot, " /><span onclick='' class=\"").concat(completedOrNot, "read-item-title\">").concat(item.task, "</span><input class=\"edit-item hide\" type=\"text\" value=\"").concat(item.task, "\" /></li>");
       }).join(''); // If array contains elements
       // show instructions
 
@@ -157,7 +157,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           checkedOrNot = '';
         }
 
-        return "<li><input data-id=\"".concat(item.id, "\" type=\"checkbox\" value=\"").concat(item.completed, "\" class=\"to-do-list-checkbox\" ").concat(checkedOrNot, " /><span class=\"").concat(completedOrNot, "read-item-title\">").concat(item.task, "</span><input class=\"edit-item hide\" type=\"text\" value=\"").concat(item.task, "\" /></li>");
+        return "<li><input data-id=\"".concat(item.id, "\" type=\"checkbox\" value=\"").concat(item.completed, "\" class=\"to-do-list-checkbox\" ").concat(checkedOrNot, " /><span onclick='' class=\"").concat(completedOrNot, "read-item-title\">").concat(item.task, "</span><input class=\"edit-item hide\" type=\"text\" value=\"").concat(item.task, "\" /></li>");
       }).join('');
 
       _this.deleteBtnParagraph.classList.remove('show');
