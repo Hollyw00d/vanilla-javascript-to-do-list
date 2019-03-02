@@ -4,8 +4,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-// Anonymous function
-(function () {
+// Block scoped
+{
   var ToDoListOperations = // Get DOM elements
   function ToDoListOperations() {
     var _this = this;
@@ -288,4 +288,4 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   document.addEventListener('focusout', getToDoListElements.updateItemOnFocusOut); // Set value of input field on "Enter" keypress
 
   document.addEventListener('keydown', getToDoListElements.updateItemOnEnterKeyPress);
-})();
+}
