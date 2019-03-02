@@ -1,5 +1,5 @@
-// Anonymous function
-(() => {
+// Block scoped
+{
   
   class ToDoListOperations {
     
@@ -328,4 +328,4 @@
   // Set value of input field on "Enter" keypress
   document.addEventListener('keydown', getToDoListElements.updateItemOnEnterKeyPress)
   
-})();
+}
